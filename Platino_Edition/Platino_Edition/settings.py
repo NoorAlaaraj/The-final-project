@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'main_app',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -78,6 +79,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'platinoedition',
+        'USER': 'postgres',
+        'PASSWORD': 'mram',
+        'HOST': 'localhost',
+        'PORT': '5432'
+
     }
 }
 
