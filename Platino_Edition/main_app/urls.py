@@ -10,4 +10,7 @@ urlpatterns = [
     path('realstates/', views.realstates, name='realstates'),
     path('car/', views.car, name='car'),
 
+    # New url pattern below
+path('accounts/signup/', views.signup, name='signup'),
+
 ]
